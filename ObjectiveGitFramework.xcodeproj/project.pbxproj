@@ -1689,6 +1689,7 @@
 					"$(inherited)",
 					/usr/local/opt/openssl/lib,
 					"$(PROJECT_DIR)/External/build/lib",
+					/opt/homebrew/opt/openssl/lib,
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = (
@@ -1702,6 +1703,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
+				VALID_ARCHS = arm64;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -1718,6 +1720,7 @@
 					"$(inherited)",
 					/usr/local/opt/openssl/lib,
 					"$(PROJECT_DIR)/External/build/lib",
+					/opt/homebrew/opt/openssl/lib,
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = (
@@ -1731,6 +1734,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
+				VALID_ARCHS = arm64;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -1760,7 +1764,7 @@
 					.,
 					External,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -1799,7 +1803,7 @@
 					.,
 					External,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DGIT_SSH",
@@ -1932,7 +1936,7 @@
 					.,
 					External,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DGIT_SSH",
@@ -1958,6 +1962,7 @@
 					"$(inherited)",
 					/usr/local/opt/openssl/lib,
 					"$(PROJECT_DIR)/External/build/lib",
+					/opt/homebrew/opt/openssl/lib,
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = (
@@ -1971,6 +1976,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
+				VALID_ARCHS = arm64;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Test;
@@ -2026,6 +2032,7 @@
 			baseConfigurationReference = D0D8186B174421EB00995A2E /* Mac-StaticLibrary.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = arm64;
 			};
 			name = Test;
 		};
@@ -2152,7 +2159,7 @@
 					.,
 					External,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DGIT_SSH",
@@ -2178,6 +2185,7 @@
 					"$(inherited)",
 					/usr/local/opt/openssl/lib,
 					"$(PROJECT_DIR)/External/build/lib",
+					/opt/homebrew/opt/openssl/lib,
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = (
@@ -2191,6 +2199,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
+				VALID_ARCHS = arm64;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Profile;
@@ -2221,6 +2230,7 @@
 			baseConfigurationReference = D0D8186B174421EB00995A2E /* Mac-StaticLibrary.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = arm64;
 			};
 			name = Profile;
 		};
@@ -2237,6 +2247,7 @@
 			baseConfigurationReference = D0D8186B174421EB00995A2E /* Mac-StaticLibrary.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -2245,6 +2256,7 @@
 			baseConfigurationReference = D0D8186B174421EB00995A2E /* Mac-StaticLibrary.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
